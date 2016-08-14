@@ -1,0 +1,9 @@
+# Managed by Salt
+{% set config = salt['pillar.get']('kmscon:config', {}) -%}
+{% for key, value in config.iteritems() -%}
+{% if value == 'flag' -%}
+{{ key }}
+{% else -%}
+{{ key }}={{ value }}
+{% endif -%}
+{% endfor -%}
