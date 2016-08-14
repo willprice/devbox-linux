@@ -1,4 +1,4 @@
 include:
-  - kmscon.package
-  - kmscon.service
-  - kmscon.conf
+  - .package
+  - .service
+  - .conf
