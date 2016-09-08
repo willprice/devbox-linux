@@ -7,5 +7,6 @@ kmscon:
     sb-size: 10000
     font-name: Terminus
     font-size: 12
+    palette: solarized
     drm: flag
     hwaccel: flag

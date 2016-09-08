@@ -1,0 +1,18 @@
+---
+driver:
+  name: docker
+  binary: /usr/bin/docker
+
+provisioner:
+  name: salt_solo
+  formula: beaver
+  state_top:
+    base:
+      '*':
+        - network-tools
+
+platforms:
+  - name: archlinux
+
+suites:
+  - name: default

@@ -1,3 +1,5 @@
 base:
   '*':
     - kmscon
+    - pacman
+    - dotfiles

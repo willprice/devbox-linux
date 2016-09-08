@@ -79,3 +79,20 @@ $ refind-mkrlconf
 # initrd=intel-ucode.img initrd=initramfs-linux.img quiet
 $ vim /boot/refind_linux.conf
 ```
+
+### Setup system to run salt
+
+```
+$ sudo pacman -S salt-zmq
+
+# Setup salt to run in masterless minion mode
+$ git clone git://github.com/willprice/devbox-arch ~/devbox-arch
+$ sudo cp ~/devbox-arch/salt/minion /etc/salt/minion
+
+# Use devbox-arch roots as salt roots
+$ cd /srv
+$ sudo ln -s ~/devbox-arch/salt/roots salt
+
+# Run salt
+$ salt-call --local state.apply
+```

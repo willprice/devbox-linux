@@ -1,14 +1,31 @@
 base:
   '*':
-    - tools
-    - network-tools
-    - general-dev-tools
     - c
     - cpp
+    - desktop
+    - dotfiles
+    - fish
+    - general-dev-tools
+    - git
     - java
-    - python
+    - kmscon
+    - lightdm
+    - mate
+    - mosh
+    - network-tools
+    - networkmanager
     - perl
+    - powerline-fonts
+    - python
+    - ruby
+    - ssh
+    - thinkpad
+    - tools
+    - urxvt
+    - xmonad
+    - xorg
   'os:Arch':
-    - arch-vconsole
     - arch-locale
+    - arch-vconsole
     - arch-time
+    - pacman
